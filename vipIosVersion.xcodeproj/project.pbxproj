@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14BCA81B23C45AD70096AA82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BCA81A23C45AD70096AA82 /* AppDelegate.m */; };
+		14BCA81E23C45AD70096AA82 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BCA81D23C45AD70096AA82 /* SceneDelegate.m */; };
+		14BCA82123C45AD70096AA82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BCA82023C45AD70096AA82 /* ViewController.m */; };
+		14BCA82423C45AD70096AA82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BCA82223C45AD70096AA82 /* Main.storyboard */; };
+		14BCA82623C45AD90096AA82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BCA82523C45AD90096AA82 /* Assets.xcassets */; };
+		14BCA82923C45AD90096AA82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BCA82723C45AD90096AA82 /* LaunchScreen.storyboard */; };
+		14BCA82C23C45AD90096AA82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BCA82B23C45AD90096AA82 /* main.m */; };
+		14BCA83423C45B980096AA82 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BCA83323C45B980096AA82 /* WebKit.framework */; };
+		14BCA83623C468EB0096AA82 /* vlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 14BCA83523C468EB0096AA82 /* vlist.json */; };
+		14BCA83923C469B00096AA82 /* vipListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BCA83823C469B00096AA82 /* vipListVC.m */; };
+		E0B7117CE7D5F6D19BAA0D86 /* libPods-vipIosVersion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5533FDACBA14B4F605AAA52 /* libPods-vipIosVersion.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14BCA81623C45AD70096AA82 /* vipIosVersion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vipIosVersion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BCA81923C45AD70096AA82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14BCA81A23C45AD70096AA82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14BCA81C23C45AD70096AA82 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		14BCA81D23C45AD70096AA82 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		14BCA81F23C45AD70096AA82 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14BCA82023C45AD70096AA82 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14BCA82323C45AD70096AA82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14BCA82523C45AD90096AA82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14BCA82823C45AD90096AA82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14BCA82A23C45AD90096AA82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14BCA82B23C45AD90096AA82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14BCA83323C45B980096AA82 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		14BCA83523C468EB0096AA82 /* vlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vlist.json; sourceTree = "<group>"; };
+		14BCA83723C469B00096AA82 /* vipListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vipListVC.h; sourceTree = "<group>"; };
+		14BCA83823C469B00096AA82 /* vipListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vipListVC.m; sourceTree = "<group>"; };
+		73C04F09F471E180B04E0589 /* Pods-vipIosVersion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vipIosVersion.debug.xcconfig"; path = "Target Support Files/Pods-vipIosVersion/Pods-vipIosVersion.debug.xcconfig"; sourceTree = "<group>"; };
+		A755DBB177286C33AE38EA80 /* Pods-vipIosVersion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vipIosVersion.release.xcconfig"; path = "Target Support Files/Pods-vipIosVersion/Pods-vipIosVersion.release.xcconfig"; sourceTree = "<group>"; };
+		F5533FDACBA14B4F605AAA52 /* libPods-vipIosVersion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vipIosVersion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14BCA81323C45AD70096AA82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BCA83423C45B980096AA82 /* WebKit.framework in Frameworks */,
+				E0B7117CE7D5F6D19BAA0D86 /* libPods-vipIosVersion.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14BCA80D23C45AD70096AA82 = {
+			isa = PBXGroup;
+			children = (
+				14BCA81823C45AD70096AA82 /* vipIosVersion */,
+				14BCA81723C45AD70096AA82 /* Products */,
+				14BCA83223C45B980096AA82 /* Frameworks */,
+				FF8F208D14E945E29A6F56EA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		14BCA81723C45AD70096AA82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14BCA81623C45AD70096AA82 /* vipIosVersion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14BCA81823C45AD70096AA82 /* vipIosVersion */ = {
+			isa = PBXGroup;
+			children = (
+				14BCA83523C468EB0096AA82 /* vlist.json */,
+				14BCA81923C45AD70096AA82 /* AppDelegate.h */,
+				14BCA81A23C45AD70096AA82 /* AppDelegate.m */,
+				14BCA81C23C45AD70096AA82 /* SceneDelegate.h */,
+				14BCA81D23C45AD70096AA82 /* SceneDelegate.m */,
+				14BCA81F23C45AD70096AA82 /* ViewController.h */,
+				14BCA82023C45AD70096AA82 /* ViewController.m */,
+				14BCA82223C45AD70096AA82 /* Main.storyboard */,
+				14BCA82523C45AD90096AA82 /* Assets.xcassets */,
+				14BCA82723C45AD90096AA82 /* LaunchScreen.storyboard */,
+				14BCA82A23C45AD90096AA82 /* Info.plist */,
+				14BCA82B23C45AD90096AA82 /* main.m */,
+				14BCA83723C469B00096AA82 /* vipListVC.h */,
+				14BCA83823C469B00096AA82 /* vipListVC.m */,
+			);
+			path = vipIosVersion;
+			sourceTree = "<group>";
+		};
+		14BCA83223C45B980096AA82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14BCA83323C45B980096AA82 /* WebKit.framework */,
+				F5533FDACBA14B4F605AAA52 /* libPods-vipIosVersion.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF8F208D14E945E29A6F56EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73C04F09F471E180B04E0589 /* Pods-vipIosVersion.debug.xcconfig */,
+				A755DBB177286C33AE38EA80 /* Pods-vipIosVersion.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14BCA81523C45AD70096AA82 /* vipIosVersion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14BCA82F23C45AD90096AA82 /* Build configuration list for PBXNativeTarget "vipIosVersion" */;
+			buildPhases = (
+				085D0DA87EE8FDFCB6F68004 /* [CP] Check Pods Manifest.lock */,
+				14BCA81223C45AD70096AA82 /* Sources */,
+				14BCA81323C45AD70096AA82 /* Frameworks */,
+				14BCA81423C45AD70096AA82 /* Resources */,
+				EB286EE942E994D53CF51FEC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vipIosVersion;
+			productName = vipIosVersion;
+			productReference = 14BCA81623C45AD70096AA82 /* vipIosVersion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14BCA80E23C45AD70096AA82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = xiaoquan.jiang;
+				TargetAttributes = {
+					14BCA81523C45AD70096AA82 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 14BCA81123C45AD70096AA82 /* Build configuration list for PBXProject "vipIosVersion" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14BCA80D23C45AD70096AA82;
+			productRefGroup = 14BCA81723C45AD70096AA82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14BCA81523C45AD70096AA82 /* vipIosVersion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14BCA81423C45AD70096AA82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BCA83623C468EB0096AA82 /* vlist.json in Resources */,
+				14BCA82923C45AD90096AA82 /* LaunchScreen.storyboard in Resources */,
+				14BCA82623C45AD90096AA82 /* Assets.xcassets in Resources */,
+				14BCA82423C45AD70096AA82 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		085D0DA87EE8FDFCB6F68004 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vipIosVersion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB286EE942E994D53CF51FEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vipIosVersion/Pods-vipIosVersion-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vipIosVersion/Pods-vipIosVersion-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vipIosVersion/Pods-vipIosVersion-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14BCA81223C45AD70096AA82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BCA83923C469B00096AA82 /* vipListVC.m in Sources */,
+				14BCA82123C45AD70096AA82 /* ViewController.m in Sources */,
+				14BCA81B23C45AD70096AA82 /* AppDelegate.m in Sources */,
+				14BCA82C23C45AD90096AA82 /* main.m in Sources */,
+				14BCA81E23C45AD70096AA82 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14BCA82223C45AD70096AA82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14BCA82323C45AD70096AA82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14BCA82723C45AD90096AA82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14BCA82823C45AD90096AA82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14BCA82D23C45AD90096AA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		14BCA82E23C45AD90096AA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14BCA83023C45AD90096AA82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C04F09F471E180B04E0589 /* Pods-vipIosVersion.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NV8VT822BS;
+				INFOPLIST_FILE = vipIosVersion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sean.vipIosVersion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14BCA83123C45AD90096AA82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A755DBB177286C33AE38EA80 /* Pods-vipIosVersion.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NV8VT822BS;
+				INFOPLIST_FILE = vipIosVersion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sean.vipIosVersion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14BCA81123C45AD70096AA82 /* Build configuration list for PBXProject "vipIosVersion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BCA82D23C45AD90096AA82 /* Debug */,
+				14BCA82E23C45AD90096AA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14BCA82F23C45AD90096AA82 /* Build configuration list for PBXNativeTarget "vipIosVersion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BCA83023C45AD90096AA82 /* Debug */,
+				14BCA83123C45AD90096AA82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14BCA80E23C45AD70096AA82 /* Project object */;
+}
