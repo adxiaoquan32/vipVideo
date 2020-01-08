@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		14BCA81B23C45AD70096AA82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BCA81A23C45AD70096AA82 /* AppDelegate.m */; };
 		14BCA81E23C45AD70096AA82 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BCA81D23C45AD70096AA82 /* SceneDelegate.m */; };
-		14BCA82123C45AD70096AA82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BCA82023C45AD70096AA82 /* ViewController.m */; };
+		14BCA82123C45AD70096AA82 /* videoWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BCA82023C45AD70096AA82 /* videoWebVC.m */; };
 		14BCA82423C45AD70096AA82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BCA82223C45AD70096AA82 /* Main.storyboard */; };
 		14BCA82623C45AD90096AA82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BCA82523C45AD90096AA82 /* Assets.xcassets */; };
 		14BCA82923C45AD90096AA82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BCA82723C45AD90096AA82 /* LaunchScreen.storyboard */; };
@@ -17,17 +17,19 @@
 		14BCA83423C45B980096AA82 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BCA83323C45B980096AA82 /* WebKit.framework */; };
 		14BCA83623C468EB0096AA82 /* vlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 14BCA83523C468EB0096AA82 /* vlist.json */; };
 		14BCA83923C469B00096AA82 /* vipListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BCA83823C469B00096AA82 /* vipListVC.m */; };
+		14BCA86C23C474BA0096AA82 /* NSObject+apiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BCA86B23C474BA0096AA82 /* NSObject+apiManager.m */; };
+		14BCA86E23C47B460096AA82 /* adlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 14BCA86D23C47B460096AA82 /* adlist.json */; };
 		E0B7117CE7D5F6D19BAA0D86 /* libPods-vipIosVersion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5533FDACBA14B4F605AAA52 /* libPods-vipIosVersion.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		14BCA81623C45AD70096AA82 /* vipIosVersion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vipIosVersion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BCA81623C45AD70096AA82 /* 免vip播放.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "免vip播放.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BCA81923C45AD70096AA82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14BCA81A23C45AD70096AA82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		14BCA81C23C45AD70096AA82 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		14BCA81D23C45AD70096AA82 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		14BCA81F23C45AD70096AA82 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		14BCA82023C45AD70096AA82 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14BCA81F23C45AD70096AA82 /* videoWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = videoWebVC.h; sourceTree = "<group>"; };
+		14BCA82023C45AD70096AA82 /* videoWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = videoWebVC.m; sourceTree = "<group>"; };
 		14BCA82323C45AD70096AA82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14BCA82523C45AD90096AA82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14BCA82823C45AD90096AA82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,9 @@
 		14BCA83523C468EB0096AA82 /* vlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vlist.json; sourceTree = "<group>"; };
 		14BCA83723C469B00096AA82 /* vipListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vipListVC.h; sourceTree = "<group>"; };
 		14BCA83823C469B00096AA82 /* vipListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vipListVC.m; sourceTree = "<group>"; };
+		14BCA86A23C474BA0096AA82 /* NSObject+apiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+apiManager.h"; sourceTree = "<group>"; };
+		14BCA86B23C474BA0096AA82 /* NSObject+apiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+apiManager.m"; sourceTree = "<group>"; };
+		14BCA86D23C47B460096AA82 /* adlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = adlist.json; sourceTree = "<group>"; };
 		73C04F09F471E180B04E0589 /* Pods-vipIosVersion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vipIosVersion.debug.xcconfig"; path = "Target Support Files/Pods-vipIosVersion/Pods-vipIosVersion.debug.xcconfig"; sourceTree = "<group>"; };
 		A755DBB177286C33AE38EA80 /* Pods-vipIosVersion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vipIosVersion.release.xcconfig"; path = "Target Support Files/Pods-vipIosVersion/Pods-vipIosVersion.release.xcconfig"; sourceTree = "<group>"; };
 		F5533FDACBA14B4F605AAA52 /* libPods-vipIosVersion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vipIosVersion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +73,7 @@
 		14BCA81723C45AD70096AA82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14BCA81623C45AD70096AA82 /* vipIosVersion.app */,
+				14BCA81623C45AD70096AA82 /* 免vip播放.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,13 +81,14 @@
 		14BCA81823C45AD70096AA82 /* vipIosVersion */ = {
 			isa = PBXGroup;
 			children = (
+				14BCA86D23C47B460096AA82 /* adlist.json */,
 				14BCA83523C468EB0096AA82 /* vlist.json */,
 				14BCA81923C45AD70096AA82 /* AppDelegate.h */,
 				14BCA81A23C45AD70096AA82 /* AppDelegate.m */,
 				14BCA81C23C45AD70096AA82 /* SceneDelegate.h */,
 				14BCA81D23C45AD70096AA82 /* SceneDelegate.m */,
-				14BCA81F23C45AD70096AA82 /* ViewController.h */,
-				14BCA82023C45AD70096AA82 /* ViewController.m */,
+				14BCA81F23C45AD70096AA82 /* videoWebVC.h */,
+				14BCA82023C45AD70096AA82 /* videoWebVC.m */,
 				14BCA82223C45AD70096AA82 /* Main.storyboard */,
 				14BCA82523C45AD90096AA82 /* Assets.xcassets */,
 				14BCA82723C45AD90096AA82 /* LaunchScreen.storyboard */,
@@ -90,6 +96,8 @@
 				14BCA82B23C45AD90096AA82 /* main.m */,
 				14BCA83723C469B00096AA82 /* vipListVC.h */,
 				14BCA83823C469B00096AA82 /* vipListVC.m */,
+				14BCA86A23C474BA0096AA82 /* NSObject+apiManager.h */,
+				14BCA86B23C474BA0096AA82 /* NSObject+apiManager.m */,
 			);
 			path = vipIosVersion;
 			sourceTree = "<group>";
@@ -131,7 +139,7 @@
 			);
 			name = vipIosVersion;
 			productName = vipIosVersion;
-			productReference = 14BCA81623C45AD70096AA82 /* vipIosVersion.app */;
+			productReference = 14BCA81623C45AD70096AA82 /* 免vip播放.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14BCA83623C468EB0096AA82 /* vlist.json in Resources */,
+				14BCA86E23C47B460096AA82 /* adlist.json in Resources */,
 				14BCA82923C45AD90096AA82 /* LaunchScreen.storyboard in Resources */,
 				14BCA82623C45AD90096AA82 /* Assets.xcassets in Resources */,
 				14BCA82423C45AD70096AA82 /* Main.storyboard in Resources */,
@@ -228,7 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				14BCA83923C469B00096AA82 /* vipListVC.m in Sources */,
-				14BCA82123C45AD70096AA82 /* ViewController.m in Sources */,
+				14BCA82123C45AD70096AA82 /* videoWebVC.m in Sources */,
+				14BCA86C23C474BA0096AA82 /* NSObject+apiManager.m in Sources */,
 				14BCA81B23C45AD70096AA82 /* AppDelegate.m in Sources */,
 				14BCA82C23C45AD90096AA82 /* main.m in Sources */,
 				14BCA81E23C45AD70096AA82 /* SceneDelegate.m in Sources */,
@@ -380,7 +390,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sean.vipIosVersion;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "免vip播放";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -398,7 +408,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sean.vipIosVersion;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "免vip播放";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

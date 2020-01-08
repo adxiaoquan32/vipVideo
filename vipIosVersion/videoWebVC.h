@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  videoWebVC.h
 //  vipIosVersion
 //
 //  Created by xiaoquan.jiang on 7/1/2020.
@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface videoWebVC : UIViewController
 
 @property (nullable, nonatomic, strong) NSDictionary *platformDic;
 
 @end
+
+
+@interface viAlertAction : UIAlertAction
+@property (nullable, nonatomic, strong) NSDictionary *platformDic;
+@end
+
 
