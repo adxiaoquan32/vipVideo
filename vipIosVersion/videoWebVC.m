@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
+#import "NSObject+apiManager.h"
 
 @interface ViewController ()<WKUIDelegate,WKNavigationDelegate>
 
@@ -22,9 +23,15 @@
     
     // Do any additional setup after loading the view.
     
-    NSURL *url = [NSURL URLWithString:@"http://www.iqiyi.com/"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f];
-    [self.webview loadRequest:request];
+   
+}
+
+- (void)setPlatformDic:(NSDictionary *)platformDic{
+    _platformDic = platformDic; 
+   NSURL *url = [NSURL URLWithString:platformDic[@"url"]];
+   NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f];
+   [self.webview loadRequest:request];
+    
 }
 
 
@@ -52,9 +59,8 @@
     }
     return _webview;
 }
-
+  
  
-
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
     NSString *requestUrl = navigationAction.request.URL.absoluteString;
     //如果是跳转一个新页面
@@ -62,31 +68,18 @@
         [webView loadRequest:navigationAction.request];
     }
     if (navigationAction.request.URL.absoluteString.length > 0) {
-        
         // 拦截广告
-        if ([requestUrl containsString:@"ynjczy.net"] ||
-            [requestUrl containsString:@"ylbdtg.com"] ||
-            [requestUrl containsString:@"662820.com"] ||
-            [requestUrl containsString:@"api.vparse.org"] ||
-            [requestUrl containsString:@"hyysvip.duapp.com"] ||
-            [requestUrl containsString:@"f.qcwzx.net.cn"] ||
-            [requestUrl containsString:@"adx.dlads.cn"] ||
-            [requestUrl containsString:@"dlads.cn"]
-            ) {
+        __block BOOL isAdUrl = NO;
+        [self.adUrlList enumerateObjectsUsingBlock:^(NSDictionary *urlDic, NSUInteger idx, BOOL * _Nonnull stop) {
+            isAdUrl = [requestUrl containsString:urlDic[@"url"]];
+            if ( isAdUrl ) {
+                *stop = YES;
+            }
+        }];
+        if ( isAdUrl ) {
             decisionHandler(WKNavigationActionPolicyCancel);
             return;
         }
-        if ([requestUrl hasSuffix:@".m3u8"]) {
-            NSArray *urls = [requestUrl componentsSeparatedByString:@"url="];
-            //[VipURLManager sharedInstance].m3u8Url = urls.lastObject;
-        }
-        else {
-            //[VipURLManager sharedInstance].m3u8Url = nil;
-        }
-        NSLog(@"request.URL.absoluteString = %@",requestUrl);
-//        if ([[requestUrl URLDecodedString] hasSuffix:@"clearAllHistory"]) {
-//            [self clearAllHistory];
-//        }
     }
     decisionHandler(WKNavigationActionPolicyAllow);
 }
